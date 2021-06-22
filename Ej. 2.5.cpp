@@ -1,18 +1,15 @@
 #include <iostream>
 using namespace std;
 
-//int CalcularPrefijo(int, string);
-//int CalcularSufijo(int, string);
-
 
 int main(int argc, char** argv){
-	int DNI = 0;
+	long long int DNI;
 	string sexo = "";
 	
 	int prefijo;
 	int sufijo;
 	
-/*------CHEQUEO DE INGRESOS V¡LIDOS-----------*/
+/*------CHEQUEO DE INGRESOS V√ÅLIDOS-----------*/
 	cout << "Ingrese el numero de DNI: " << endl;
 	cin >> DNI;	
 	
@@ -32,7 +29,7 @@ int main(int argc, char** argv){
 
 //separo el DNI en cada una de sus cifras
 //saco la primera cifra como cociente ("corriendo la coma") de dividir el dni por 10000000
-//repito con las dem·s, ajustando con los valores anteriores.
+//repito con las dem√°s, ajustando con los valores anteriores.
 int pri = DNI / 10000000;
 int seg = (DNI / 1000000) - pri*10;
 int ter = (DNI / 100000) - (DNI / 1000000)*10;	
